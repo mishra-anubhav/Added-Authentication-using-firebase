@@ -1,0 +1,24 @@
+<div class="row" style=" background:#222b37;">
+  <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 second " >
+       <p class="india"> Hello from India</p> <i class="icon ion-md-heart heart"> </i>
+ </div>
+  <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 second" >
+       <p class="copyright"> <b style="color:#9ca6af;font-size: 22px">&copy;</b> 2019 Zooliy  </p>   
+ </div>
+</div>
+<a class="float" (click)="toggle()" id="bt">
+  <div draggable="false" onmousedown="return false">
+      <i class="material-icons chat" style="animation: zoomout .20s ease-in" [ngClass]="{chatclose:this.buttonName=='Hide'}">message</i> 
+            <i class="material-icons chatclose cross"  style="animation: zoomout .20s ease-in;" [ngClass]="{chatopen:this.buttonName=='Hide'}">close</i></div>
+       </a>
+         
+         <ng-container *ngIf="show">
+                 <iframe class="fix" 
+                 allow="microphone;"
+                 width="350"
+                 height="537" 
+                 src="https://console.dialogflow.com/api-client/demo/embedded/19428fce-4c01-4981-bc13-4a3804eb8dec">
+                 </iframe>
+         </ng-container> 
+    
+    
